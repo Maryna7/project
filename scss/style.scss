@@ -1,0 +1,30 @@
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'widescreen': 1200px
+);
+
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+@import "basics/_include-media";
+@import "basics/_normalize";
+@import "basics/_variables";
+@import "basics/_mixins-extend";
+@import "basics/_fonts";
+
+@import "layout/_general";
+@import 'layout/_slick';
+@import 'layout/_slick-theme';
+@import "layout/_header";
+@import "layout/_main";
+@import "layout/_footer";
